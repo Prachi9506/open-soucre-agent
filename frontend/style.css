@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    padding: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+h1 {
+    color: #090909;
+}
+
+input,
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.repo-card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
