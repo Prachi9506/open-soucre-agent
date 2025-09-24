@@ -3,12 +3,14 @@ import requests
 from flask_cors import CORS
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
+
 app = Flask(__name__)
-CORS(app)  # allow frontend to talk to backend
+CORS(app)
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+headers = {"Authorization": f"token {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
 
 def search_repos(skill):
     url = f"https://api.github.com/search/repositories?q=language:{skill}+good-first-issues:>1&sort=stars&order=desc&per_page=3"
@@ -29,6 +31,10 @@ def search_repos(skill):
         })
     return results
 
+@app.route("/")
+def home():
+    return {"message": "Backend is running! Use /recommend endpoint"}
+
 @app.route("/recommend", methods=["POST"])
 def recommend():
     data = request.json
@@ -40,5 +46,5 @@ def recommend():
     return jsonify(results)
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
