@@ -7,11 +7,7 @@ async function getRecommendations() {
         return;
     }
 
-    const res = await fetch("https://open-soucre-agent.onrender.com/recommend", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ skills: skills })
-});
+    const res = await fetch("https://your-backend.onrender.com/recommend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ skills: skills }) });
 
 
     const data = await res.json();
