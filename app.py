@@ -32,7 +32,7 @@ def search_repos(skill):
     return results
 
 @app.route("/")
-def index():
+def home():
     return send_from_directory(app.static_folder, "index.html")
     # return {"message": "Backend is running! Use /recommend endpoint"}
 
