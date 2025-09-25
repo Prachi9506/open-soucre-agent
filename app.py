@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import requests
 from flask_cors import CORS
 import os
@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="frontend", static_url_path="")
 CORS(app)
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -32,8 +32,9 @@ def search_repos(skill):
     return results
 
 @app.route("/")
-def home():
-    return {"message": "Backend is running! Use /recommend endpoint"}
+def index():
+    return send_from_directory(app.static_folder, "index.html")
+    # return {"message": "Backend is running! Use /recommend endpoint"}
 
 @app.route("/recommend", methods=["POST"])
 def recommend():
