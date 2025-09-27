@@ -36,7 +36,7 @@ An AI-powered intelligent agent that recommends open-source GitHub repositories 
 
 ##🔑 Setup Instructions
 ###1️⃣ Clone the Repository
-git clone https://github.com/your-username/open-source-agent.git
+git clone https://github.com/the-piyushgoel/open-source-agent.git
 cd open-source-agent
 
 
