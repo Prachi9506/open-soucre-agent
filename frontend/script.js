@@ -19,9 +19,9 @@ async function getRecommendations() {
         data[skill].forEach(repo => {
             section.innerHTML += `
             <div class="repo-card">
-              <strong>${repo.name}</strong><br>
-              ⭐ Stars: ${repo.stars} | 🟢 Issues: ${repo.issues} | 📅 Updated: ${repo.updated}<br>
-              <a href="${repo.link}" target="_blank">View Repo</a>
+              <h3>${repo.name}</h3>
+              <p>⭐ Stars: ${repo.stars} | 🟢 Issues: ${repo.issues} | 📅 Updated: ${repo.updated}</p>
+              <a href="${repo.link}" target="_blank" class="getrepo">🔗 View Repository</a>
             </div>`;
         });
         resultsDiv.appendChild(section);

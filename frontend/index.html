@@ -2,19 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Source Recommender</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Source Recommender</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <div class="container">
     <h1>🔎 Open Source Project Recommender</h1>
     <p>Enter your skills (comma separated):</p>
-    <input type="text" id="skills" placeholder="e.g. Python, C++">
-    <button onclick="getRecommendations()">Find Projects</button>
+
+    <div class="input-box">
+      <input type="text" id="skills" placeholder="e.g. Python, C++">
+      <button onclick="getRecommendations()">Find Projects</button>
+    </div>
 
     <div id="results"></div>
-    <script src="script.js"></script>
+    <p class="brandName">Created by <span class="brand">commitSquad</span></p>
+  </div>
+   <script src="script.js"></script>
 </body>
+
 </html>
