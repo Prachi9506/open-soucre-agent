@@ -1,15 +1,15 @@
 ***🤖 Open Source Project Recommender Agent***  
 An AI-powered intelligent agent that recommends open-source GitHub repositories tailored to beginner-friendly contributions. It leverages the GitHub API to surface repositories with good-first-issues, helping developers kickstart their open-source journey.
 
-##🚀 Features  
+**🚀 Features**   
 ✨ Smart recommendations based on user skills
 🔍 Filters repositories with good first issues
 📊 Displays repo name, link, stars, open issues, and last updated date
 🛠️ Built with Flask + GitHub REST API
 🌐 Deployed on Render (also runs locally)
 
-##🧠 PEAS Representation  
-| ###Component    |                                     ###Description                                     |  
+**🧠 PEAS Representation**  
+| **Component**   |                                     **Description**                                    |  
 ------------------------------------------------------------------------------------------------------------   
 | **Performance** | Number of relevant repositories recommended, star count, issue activity, response time |   
 | **Environment** |            GitHub repositories, user skill input, cloud/local hosting                  |   
@@ -18,7 +18,7 @@ An AI-powered intelligent agent that recommends open-source GitHub repositories 
 
 
 
-##📂 Project Structure  
+**📂 Project Structure**  
 📁 open-source-agent/  
 ├── app.py             # Flask backend  
 ├── requirements.txt   # Python dependencies  
@@ -28,28 +28,28 @@ An AI-powered intelligent agent that recommends open-source GitHub repositories 
 
 
 
-##⚙️ Tech Stack  
+**⚙️ Tech Stack**  
 - **Backend:** Python, Flask, Flask-CORS, Requests  
 - **API Integration:** GitHub REST API  
 - **Deployment:** Render (Gunicorn server)  
 - **Environment Variables:** .env (local), Render Dashboard (production)  
 
-##🔑 Setup Instructions  
-###1️⃣ Clone the Repository  
+**🔑 Setup Instructions**  
+1️⃣ Clone the Repository  
 git clone [https://github.com/the-piyushgoel/open-source-agent.git](https://github.com/the-piyushgoel/open-soucre-agent.git)  
 cd open-source-agent  
 
 
-###2️⃣ Install Dependencies  
+2️⃣ Install Dependencies  
 pip install -r requirements.txt  
 
 
-###3️⃣ Add Environment Variable  
+3️⃣ Add Environment Variable  
 Create a .env file (for local use):  
 GITHUB_TOKEN=your_personal_access_token  
 
 
-###4️⃣ Run Locally  
+4️⃣ Run Locally  
 python app.py  
 
 
