@@ -1,4 +1,4 @@
-#🤖 Open Source Project Recommender Agent
+***🤖 Open Source Project Recommender Agent***
 An AI-powered intelligent agent that recommends open-source GitHub repositories tailored to beginner-friendly contributions. It leverages the GitHub API to surface repositories with good-first-issues, helping developers kickstart their open-source journey.
 
 ##🚀 Features
@@ -36,7 +36,7 @@ An AI-powered intelligent agent that recommends open-source GitHub repositories 
 
 ##🔑 Setup Instructions
 ###1️⃣ Clone the Repository
-git clone https://github.com/the-piyushgoel/open-source-agent.git
+git clone [https://github.com/the-piyushgoel/open-source-agent.git](https://github.com/the-piyushgoel/open-soucre-agent.git)
 cd open-source-agent
 
 
