@@ -20,7 +20,7 @@ An AI-powered intelligent agent that recommends open-source GitHub repositories 
 
 **📂 Project Structure**  
 📁 open-source-agent/  
-├── app.py             # Flask backend  
+├── app.py             # Flask backend   
 ├── requirements.txt   # Python dependencies  
 ├── Procfile           # Deployment config for Render  
 ├── .gitignore         # Ignore env files and secrets  
